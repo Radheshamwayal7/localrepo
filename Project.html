@@ -9,7 +9,6 @@
         *{
             margin: 0%;
             padding: 0%;
-            font-family: sans-serif;
         }
         .header{
             width: 100%;
@@ -127,8 +126,12 @@
             font-weight: bolder;
         }
         .main{
-            width: 100%;
+            width: 100%fit-content;
             height: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
             
         }
         .texts{
@@ -154,7 +157,7 @@
             
         }
         .Info{
-            width: 80%;
+            width:100px%;
             margin: auto;
             display: flex;
             background-color:ghostwhite;
@@ -162,6 +165,8 @@
         }
         .col1{
            gap: 10px;
+           display: block;
+           margin-left: 50px;
     
         }
         .col1 b{
@@ -169,6 +174,7 @@
 
             padding-top: 30px;
             padding-bottom: 20px;
+
         }
         .row2{
             display: block;
@@ -186,14 +192,22 @@
             width: 500px;
             height: 100px;
             display: flex;
-            margin-left: 30px;
+            flex-direction: column;
+            margin-left: 50px;
         }
         .app b{
             display: block;
             margin-top: 30px;
         }
         .productquality{
-            
+            width: 200px;
+            display: flex;
+            padding-top: 30px;
+
+        }
+        .productquality img b{
+            font-size: small !important;
+            margin-bottom: 50px;
         }
     </style>
 </head>
@@ -288,14 +302,19 @@
                     <a href="https://developer.apple.com/app-store/">
                         <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download On The App Store" width="200px" height="100px">
                     </a>
-                    
-                    <p style="font-weight: bold; margin-bottom: 12px;">KEEP IN TOUCH</p>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/32/733/733547.png" alt="Facebook" width="32" /></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/32/733/733579.png" alt="Twitter" width="32" /></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/32/1384/1384060.png" alt="YouTube" width="32" /></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/32/733/733558.png" alt="Instagram" width="32" /></a>
+     <p>Keep in Touch</p>               
+  <div style="display: flex; gap: 15px; margin-top: 10px;">
+  <a href="https://www.facebook.com"><img src="https://cdn-icons-png.flaticon.com/32/733/733547.png" alt="Facebook" width="32" /></a>
+  <a href="https://www.twitter.com"><img src="https://cdn-icons-png.flaticon.com/32/733/733579.png" alt="Twitter" width="32" /></a>
+  <a href="https://www.youtube.com"><img src="https://cdn-icons-png.flaticon.com/32/1384/1384060.png" alt="YouTube" width="32" /></a>
+  <a href="https://www.instagram.com"><img src="https://cdn-icons-png.flaticon.com/32/733/733558.png" alt="Instagram" width="32" /></a>
+</div></b>
+</div>
+                <div class="productquality">
+                    <img src="stamp.avif" width="150px" height="100px">
+                    <b>100% ORIGINAL guarantee for all products at myntra.com</b>
+                 
                 </div>
-                <div class="productquality"></div>
         </div>
     </div>
 </body>
