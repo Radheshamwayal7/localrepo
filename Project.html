@@ -26,16 +26,19 @@
             display: flex;
             margin-right: 20px;
         }
-        p{
-          display: flex;
-          align-items: center;
-          word-spacing: 20px;
-          font-size: large;
-          font-weight: bold;
+        .menu{
+            width: 40%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-between;
         }
-        b{
-            padding-top: 30px;
-
+        .menu b{
+            display: flex;
+            margin-top: 40px;
+            font-family: sans-serif;
+            font-weight: bolder;
         }
         .Rightheader{
             width: fit-content;
@@ -123,6 +126,75 @@
             margin: auto;
             font-weight: bolder;
         }
+        .main{
+            width: 100%;
+            height: 1000px;
+            
+        }
+        .texts{
+            height: 10px;
+            margin-top: 10px;
+            padding-left: 10px;
+
+        }
+        .texts p{
+            font-weight: bold !important;
+        }
+        .Products{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        .Products img{
+            margin: 20px 20px;
+            
+        }
+        .Info{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            background-color:ghostwhite;
+            padding: 40px 0px;
+        }
+        .col1{
+           gap: 10px;
+    
+        }
+        .col1 b{
+            display: block;
+
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        .row2{
+            display: block;
+            margin-left: 30px;
+            
+            
+        }
+        .row2 b{
+             display: block;
+
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        .app{
+            width: 500px;
+            height: 100px;
+            display: flex;
+            margin-left: 30px;
+        }
+        .app b{
+            display: block;
+            margin-top: 30px;
+        }
+        .productquality{
+            
+        }
     </style>
 </head>
 <body>
@@ -130,15 +202,15 @@
         <div class="Leftheader">
             <img src="Myntra.png" width="50px" height="20px">
         </div>
-        <p> 
-            Men
-            Women
-            Kids
-            Home
-            Beauty
-            Genz
-            Studio
-        </p>
+        <div class="menu">
+            <b>Men</b>
+            <b>Women</b>
+            <b>Kids</b>
+            <b>Home</b>
+            <b>Beauty</b>
+            <b>Genz</b>
+            <b>Studio</b>
+        </div> 
         <div class="Rightheader">
             <form>
                     <i class="fa-solid fa-magnifying-glass"></i> 
@@ -159,8 +231,72 @@
         </div>
     </div>
     <div class="firstorder">
-        <span>FLAT 300 OFF</span>
+        <span>FLAT <i class="fa-solid fa-indian-rupee-sign"></i>300 OFF</span>
         <span>ON FIRST PURCHASE</span>
+    </div>
+    <div class="main">
+
+        <div class="texts"><p>Top Sellers in Books for you</p></div>
+        <div class="Products">
+            <img src="image1.jpg">
+            <img src="image2.jpg">
+            <img src="image3.jpg">
+            <img src="image4.jpg">
+            <img src="image5.jpg">
+            <img src="image6.jpg">
+            
+        </div>
+        <div class="Products">
+            <img src="image1.jpg">
+            <img src="image2.jpg">
+            <img src="image3.jpg">
+            <img src="image4.jpg">
+            <img src="image5.jpg">
+            <img src="image6.jpg">
+            
+        </div>
+        <div class="Info">
+            <div class="col1">
+                <b>ONLINE SHOPPING</b>
+                      <p>Men</p>
+                      <p>Women</p>
+                      <p>Kids</p>
+                      <p>Home</p>
+                      <p>Beauty</p>
+                      <p>Genz</p>
+                      <p>Gift Cards</p>
+                      <p> Myntra Insider</p>
+            </div>
+            <div class="row2">
+
+               <b>USEFUL LINKS</b> 
+                
+                <p>Blog</p>
+                <p>Careers</p>
+                <p>Site Map</p>
+                <p>Corporate Information</p>
+                <p>Whitehat</p>
+                <p>Cleartrip</p>
+                <p>Myntra Global</p>
+            </div>
+            <div class="app">
+                <b>EXPERIENCE MYNTRA APP ON MOBILE
+                    <a href="https://play.google.com/store/games?hl=en">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200px" height="100px">
+                        
+                    </a>
+                    <a href="https://developer.apple.com/app-store/">
+                        <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download On The App Store" width="200px" height="100px">
+                    </a>
+                    
+                    <p style="font-weight: bold; margin-bottom: 12px;">KEEP IN TOUCH</p>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/32/733/733547.png" alt="Facebook" width="32" /></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/32/733/733579.png" alt="Twitter" width="32" /></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/32/1384/1384060.png" alt="YouTube" width="32" /></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/32/733/733558.png" alt="Instagram" width="32" /></a>
+                </div>
+                <div class="productquality"></div>
+        </div>
     </div>
 </body>
 </html>
